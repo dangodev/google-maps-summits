@@ -1,0 +1,27 @@
+{
+  "name": "google-maps-summits",
+  "version": "0.0.1-alpha",
+  "description": "Summit peaks and locations represented in Google Maps.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "prettier": "^1.13.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangodev/google-maps-summits.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangodev/google-maps-summits/issues"
+  },
+  "homepage": "https://github.com/dangodev/google-maps-summits#readme"
+}
