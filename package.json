@@ -15,7 +15,10 @@
     "lint": "eslint **/*.js",
     "start": "node ./server/index.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-static": "^5.0.0"
+  },
   "devDependencies": {
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
