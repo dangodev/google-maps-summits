@@ -1,0 +1,18 @@
+{
+  "peaks": [
+    {
+      "name": "Grand Teton",
+      "slug": "grand-teton",
+      "elevation": 13775,
+      "lat": 43.742726,
+      "lng": -110.802585
+    },
+    {
+      "name": "South Teton",
+      "slug": "south-teton",
+      "elevation": 12513,
+      "lat": 43.719459,
+      "lng": -110.819026
+    }
+  ]
+}
