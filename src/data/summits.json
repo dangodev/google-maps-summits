@@ -1,18 +1,156 @@
 {
   "peaks": [
     {
-      "name": "Grand Teton",
-      "slug": "grand-teton",
-      "elevation": 13775,
-      "lat": 43.742726,
-      "lng": -110.802585
+      "featureID": 1597090,
+      "name": "Albright Peak",
+      "slug": "albright-peak",
+      "elevation": 10558,
+      "lat": 43.6706012,
+      "lng": -110.8138977
     },
     {
+      "featureID": 1597973,
+      "name": "Battleship Mountain",
+      "slug": "battleship-mountain",
+      "elevation": 10669,
+      "lat": 43.722929,
+      "lng": -110.8691565
+    },
+    {
+      "featureID": 1598817,
+      "name": "Cloudveil Dome",
+      "slug": "cloudveil-dome",
+      "elevation": 11968,
+      "lat": 43.7188978,
+      "lng": -110.8074119
+    },
+    {
+      "featureID": 1599263,
+      "name": "Disappointment Peak",
+      "slug": "disappointment-peak",
+      "elevation": 11585,
+      "lat": 43.7334424,
+      "lng": -110.7928506
+    },
+    {
+      "featureID": 1599515,
+      "name": "East Prong",
+      "slug": "east-prong",
+      "elevation": 11998,
+      "lat": 43.7464232,
+      "lng": -110.7916539
+    },
+    {
+      "featureID": 1600459,
+      "name": "Mount Hunt",
+      "slug": "mount-hunt",
+      "elevation": 10781,
+      "lat": 43.6308148,
+      "lng": -110.861055
+    },
+    {
+      "featureID": 1601431,
+      "name": "Middle Teton",
+      "slug": "middle-teton",
+      "elevation": 12792,
+      "lat": 43.7299004,
+      "lng": -110.8112917
+    },
+    {
+      "featureID": 1602319,
+      "name": "Prospectors Mountain",
+      "slug": "prospectors-mountain",
+      "elevation": 11237,
+      "lat": 43.6491332,
+      "lng": -110.849604
+    },
+    {
+      "featureID": 1602809,
+      "name": "Shadow Peak",
+      "slug": "shadow-peak",
+      "elevation": 10692,
+      "lat": 43.7149629,
+      "lng": -110.7916044
+    },
+    {
+      "featureID": 1603204,
       "name": "South Teton",
       "slug": "south-teton",
-      "elevation": 12513,
-      "lat": 43.719459,
-      "lng": -110.819026
+      "elevation": 12506,
+      "lat": 43.7186817,
+      "lng": -110.8185245
+    },
+    {
+      "featureID": 1603346,
+      "name": "Static Peak",
+      "slug": "static-peak",
+      "elevation": 11273,
+      "lat": 43.6825845,
+      "lng": -110.8163991
+    },
+    {
+      "featureID": 1603510,
+      "name": "Table Mountain",
+      "slug": "table-mountain",
+      "elevation": 11092,
+      "lat": 43.7468989,
+      "lng": -110.8521704
+    },
+    {
+      "featureID": 1603547,
+      "name": "Teewinot Mountain",
+      "slug": "teewinot-mountain",
+      "elevation": 12247,
+      "lat": 43.7468836,
+      "lng": -110.7796866
+    },
+    {
+      "featureID": 1603916,
+      "name": "Veiled Peak",
+      "slug": "veiled-peak",
+      "elevation": 11312,
+      "lat": 43.7007174,
+      "lng": -110.8260565
+    },
+    {
+      "featureID": 1605575,
+      "name": "Mount Owen",
+      "slug": "mount-owen",
+      "elevation": 12913,
+      "lat": 43.7469229,
+      "lng": -110.7973813
+    },
+    {
+      "featureID": 1605586,
+      "name": "Mount Wister",
+      "slug": "mount-wister",
+      "elevation": 11483,
+      "lat": 43.7018133,
+      "lng": -110.8168681
+    },
+    {
+      "featureID": 1609072,
+      "name": "Buck Mountain",
+      "slug": "buck-mountain",
+      "elevation": 11926,
+      "lat": 43.6892122,
+      "lng": -110.8192499
+    },
+    {
+      "featureID": 1609129,
+      "name": "Nez Perce",
+      "slug": "nez-perce",
+      "elevation": 11880,
+      "lat": 43.7192134,
+      "lng": -110.7975524
+    },
+    {
+      "featureID": 1609199,
+      "name": "Grand Teton",
+      "slug": "grand-teton",
+      "elevation": 13766,
+      "lat": 43.7411243,
+      "lng": -110.8024781
     }
   ]
 }
