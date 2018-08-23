@@ -4,11 +4,11 @@ const { get } = require('koa-route');
 
 const app = new Koa();
 
-const data = require('../src/data/summits.json');
-
 // JSON endpoint, adapted from https://github.com/koajs/route
 app.use(
   get('/api/v1/peaks', ctx => {
+    // eslint-disable-next-line global-require
+    const data = require('../src/data/summits.json');
     ctx.body = data;
   })
 );
