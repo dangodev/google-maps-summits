@@ -13,6 +13,14 @@
   <h2>
     <a href="https://en.wikipedia.org/wiki/Yeehaw_Junction,_Florida">Yeehaw! . . . Junction</a>
   </h2>
+  <script src="./javascript/axios.min.js"></script>
+  <script>
+    const response = axios.get('/api/v1/peaks')
+      .then(({ data: { peaks } }) => {
+        console.log(peaks);
+        // Google Maps API code goes here
+      })
+  </script>
 </body>
 
 </html>
