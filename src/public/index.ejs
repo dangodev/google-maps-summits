@@ -15,6 +15,8 @@
   </h2>
   <script src="./javascript/axios.min.js"></script>
   <script>
+    console.log('<%= GOOGLE_MAPS_API_KEY %>');
+
     const response = axios.get('/api/v1/peaks')
       .then(({ data: { peaks } }) => {
         console.log(peaks);
