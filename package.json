@@ -16,7 +16,9 @@
     "start": "node ./server/index.js"
   },
   "dependencies": {
+    "dotenv": "^6.0.0",
     "koa": "^2.5.2",
+    "koa-ejs": "^4.1.2",
     "koa-route": "^3.2.0",
     "koa-static": "^5.0.0"
   },
