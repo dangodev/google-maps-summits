@@ -6,23 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>🏔 Google Maps Summits</title>
+  <link rel="stylesheet" href="css/summits.css" />
 </head>
 
 <body>
-  <h1>The server works!</h1>
-  <h2>
-    <a href="https://en.wikipedia.org/wiki/Yeehaw_Junction,_Florida">Yeehaw! . . . Junction</a>
-  </h2>
-  <script src="./javascript/axios.min.js"></script>
-  <script>
-    console.log('<%= GOOGLE_MAPS_API_KEY %>');
+  <h1>🏔 Google Maps Summits</h1>
+  <div id="map"></div>
 
+  <!-- Axios CDN Script to fetch data from endpoint -->
+  <!-- https://www.npmjs.com/package/axios -->
+  <script src="./javascript/axios.min.js"></script>
+
+  <script>
+
+    // initmap function is in global scope, to resolve issue with google maps script loading async before initMap was available
+    // https://stackoverflow.com/questions/32496382/typeerror-window-initmap-is-not-a-function
+    function initMap() { }
+
+    //use axios to get data from endpoint
     const response = axios.get('/api/v1/peaks')
       .then(({ data: { peaks } }) => {
-        console.log(peaks);
-        // Google Maps API code goes here
+
+        //Initialize the map
+        initMap = function () {
+          //Map Center
+          const southTeton = new google.maps.LatLng(43.7186817, -110.8185245);
+
+          //Build a new map
+          map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 11,
+            center: southTeton,
+            mapTypeId: 'terrain'
+          });
+
+          markerObjects = [];
+
+          //loop through each element in the summit data and create a marker
+          peaks.forEach(element => {
+            marker = new google.maps.Marker({
+              position: new google.maps.LatLng(element.lat, element.lng),
+              map: map,
+              title: element.name
+            });
+
+            const infowindow = new google.maps.InfoWindow();
+
+            //Add listner for mouseover to show info window
+            //Is this the best way to add an event listner in this application? 
+            //I think I read that too many listners can slow down a page
+            google.maps.event.addListener(marker, "mouseover", (function (marker) {
+              return function (evt) {
+                var content =
+                  '<h2>' + element.name + '</h2>' +
+                  '<p>Elevation: ' + element.elevation + '</p>'
+
+                //marker.getTitle();
+                infowindow.setContent(content);
+                infowindow.open(map, marker);
+              }
+            })(marker));
+
+            google.maps.event.addListener(marker, "mouseout", (function (marker) {
+              return function (evt) {
+                infowindow.close();
+              }
+            })(marker));
+
+            markerObjects.push(marker);
+
+          });
+        }
       })
   </script>
+
+  <!-- Google Maps Script, load google map from goole maps api -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= GOOGLE_MAPS_API_KEY %>&callback=initMap">
+  </script>
+
 </body>
 
 </html>
